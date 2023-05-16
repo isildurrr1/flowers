@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/flowers/static/css/main.2a1420c8.css",
+    "main.js": "/flowers/static/js/main.ffcfc44c.js",
+    "static/media/grass.jpg": "/flowers/static/media/grass.cefae978738dd5d88091.jpg",
+    "static/media/lechuza-cubico.jpg": "/flowers/static/media/lechuza-cubico.282165e8bb3fa1a01c23.jpg",
+    "static/media/dev-img.png": "/flowers/static/media/dev-img.2f55c80f44bdc458558a.png",
+    "static/media/Dita-Sweet.woff": "/flowers/static/media/Dita-Sweet.c2fe506cf78b31a255b9.woff",
+    "static/media/Dita-Sweet.woff2": "/flowers/static/media/Dita-Sweet.20209128966953cfaec5.woff2",
+    "static/media/icon2.svg": "/flowers/static/media/icon2.4478b0c757f041af154c4f7af40fffba.svg",
+    "static/media/icon4.svg": "/flowers/static/media/icon4.7fd237dd92d188d6de536bbd1bf20aa3.svg",
+    "static/media/icon3.svg": "/flowers/static/media/icon3.884e4da97a4d399babb6488080d546a2.svg",
+    "static/media/icon1.svg": "/flowers/static/media/icon1.293642ae116288809a3e241591fd751a.svg",
+    "static/media/search.svg": "/flowers/static/media/search.e508c64b4aa1952b845f.svg",
+    "static/media/basket.svg": "/flowers/static/media/basket.801e39dcc8739eda70e1a54fd38bb12b.svg",
+    "index.html": "/flowers/index.html",
+    "static/media/close_icon.svg": "/flowers/static/media/close_icon.2ceb783afbab75916ddc.svg",
+    "main.2a1420c8.css.map": "/flowers/static/css/main.2a1420c8.css.map",
+    "main.ffcfc44c.js.map": "/flowers/static/js/main.ffcfc44c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a1420c8.css",
+    "static/js/main.ffcfc44c.js"
+  ]
+}
