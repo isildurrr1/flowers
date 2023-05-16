@@ -1,13 +1,335 @@
-body {
+@import url(./vendor/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('./vendor/fonts/Dita-Sweet.css');
+
+h1, h2, h3, p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgb(241,241,243);
+  font-family: 'Roboto', sans-serif;
+}
+
+.page{
+  max-width: 1285px;
+  margin: auto; 
+} 
+
+.App {
+  min-height: 100vh;
+  min-width: 1200px;
+  color: rgb(67,73,92);
+  display: grid;
+  grid-template-columns: 19.5% 80.5% ;
+  grid-template-rows: 79% 25%;
+}
+
+.left-menu {
+  border-right: 2px solid rgb(215,215,217);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0 93px 44px;
+}
+
+.left-menu-list {
+  font-size: 25px;
+  min-height: 46%;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.tel {
+  font-size: 19px;
+}
+
+.header-menu-list{
+  font-size: 25px;
+  min-width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0px;
+  margin: 7px 7px 7px 24px;
+}
+
+.contacts {
+  color: rgb(110,110,112);
+  width: 88%;
+  margin-left: 3px;
+}
+
+.btn-contacts {
+  margin-top: 15px;
+  width: 95%;
+}
+
+.btn-main {
+  width: 368px;
+  margin-bottom: 29px;
+  margin-left: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(27,26,39);
+  color: white;
+  border: none;
+  height: 42px;
+  letter-spacing: 3px;
+  font-size: 19px;
+  transition: opacity 0.3s ease-in-out,
+   transform 0.4s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 70%;
+  transform: scale(1.04);
+}
+
+.menu-img {
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header{
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 21px;
+  height: 88px;
+}
+
+.logo {
+  width: 177px;
+  height: 60px;
+}
+
+.search-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 46px;
+}
+
+.search {
+  background-color: rgb(241,241,243);
+  border: 2px solid rgb(186,186,188);
+  background-image: url(./images/search.svg);
+  background-size: 15px 15px; 
+  background-position: 15px 5px;
+  background-repeat: no-repeat;
+  outline: none;
+  padding-left: 46px;
+  width: 259px;
+  height: 25px;
+  margin: 34px 0 0 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  background-image: url(./images/lechuza-cubico.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.main-content {
+  display: flex;
+  max-width: 400px;
+  min-width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 64px 19px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 15% 85% ;
+}
+
+.main-text {
+  padding-bottom: 115px;
+  max-width: 400px;
+  margin: auto 0 auto 0;
+}
+
+.title_h1 {
+  font-family: 'Dita-Sweet';
+  font-size: 80px;
+}
+
+.title_h2 {
+  font-family: 'Dita-Sweet';
+  font-size: 50px;
+}
+
+.subtitle{
+  font-size: 28px;
+  margin-left: 10px;
+  margin-top: 20px;
+  letter-spacing: 2.5px;
+}
+
+
+.footer {
+  background-color: rgb(31,30,44);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.card-title {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card {
+  padding-top: 20px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(27,26,39);
+  font-size: 16px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: block;
+}
+
+.card-icon {
+  margin: 0 auto 0 auto;
+  width: 80px;
+  height: 110px;
+}
+
+.card-info {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.ovhid {
+  overflow: hidden;
+}
+
+.link-reg-bascket {
+  font-size: 14px;
+  color: rgb(67,73,92);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link-reg-bascket:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+.link {
+  width: fit-content;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.link:after {
+  background-color: rgb(67,73,92); 
+  display: block;
+  content: "";
+  height: 2px; 
+  width: 0%;
+  transition: width .3s ease-in-out;
+  opacity: 0.7;
+}
+
+.link:hover:after,
+.link:focus:after {
+  width: 100%;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s linear;
+  z-index: 3;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.popup__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-img {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.popup__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  padding: 33px 0 39px 0;
+}
+
+.popup__close {
+  aspect-ratio: 1/1;
+  width: 32px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: url(images/close_icon.svg) center / 32px no-repeat;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
 }
