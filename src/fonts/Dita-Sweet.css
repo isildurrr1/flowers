@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Dita-Sweet';
+    font-style: normal;
+    font-weight: 1000;
+    font-display: swap;
+    src: url("Dita-Sweet.woff2") format("woff2"),
+    url("Dita-Sweet.woff") format("woff");
+}
